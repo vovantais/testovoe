@@ -12,8 +12,13 @@ $(document).ready(function () {
 
    $('.slider').slick(
       {
-         arrows: true,
          slidesToShow: 1,
+         arrows: true,
+         infinite: true,
+         speed: 1000,
+         autoplay: true,
+         autoplaySpeed: 2500,
+         adaptiveHeight: true,
          responsive: [
             {
                breakpoint: 768,

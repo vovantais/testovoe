@@ -1279,13 +1279,16 @@ body.lock {
       padding: 45px 0px 100px 0px;
    }
    .agency__body {
-      width: 800px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
@@ -1301,7 +1304,8 @@ body.lock {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      width: 360px;
+      width: 700px;
+      margin: 0px 0px 20px -300px;
    }
    .agency__img {
       display: block;
@@ -1367,6 +1371,10 @@ body.lock {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
@@ -1386,9 +1394,13 @@ body.lock {
       -ms-flex-pack: start;
       justify-content: flex-start;
       width: 500px;
+      margin: 0px 0px 0px 10px;
    }
    .agency__title {
       text-align: left;
+   }
+   .agency__about {
+      margin: 0px 0px 0px 20px;
    }
    .agency__text {
       text-align: left;
@@ -1575,6 +1587,9 @@ body.lock {
       width: 560px;
       margin: 0px 0px 0px 0px;
    }
+   .agency__about {
+      margin: 0px 0px 0px 00px;
+   }
    .contact {
       padding: 390px 0px 30px 0px;
    }
@@ -1610,6 +1625,24 @@ body.lock {
       top: -55px;
       left: 40px;
       text-align: center;
+   }
+}
+
+@media (min-width: 1600px) {
+   .header__menu {
+      max-width: 1120px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+   }
+   .header__logo {
+      left: 120px;
+   }
+}
+
+@media (min-width: 1920px) {
+   .container {
+      max-width: 1400px;
    }
 }
 
